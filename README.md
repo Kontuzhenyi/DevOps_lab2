@@ -25,3 +25,6 @@ sudo netplan apply
 
 Настроен статический ip адрес на двух виртуальных машинах
 <img width="853" height="699" alt="image" src="https://github.com/user-attachments/assets/1a7f7264-3c3c-424b-969d-7648169cd20b" />
+
+На второй виртуальной машине создан пользователь без пароля для sudo. Продемонстрировано успешное подключение с первой машины
+<img width="837" height="817" alt="image" src="https://github.com/user-attachments/assets/f0f51a4e-f45d-4652-a113-c356da73740b" />
