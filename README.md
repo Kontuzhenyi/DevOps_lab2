@@ -32,5 +32,9 @@ sudo netplan apply
 Устанавили ansible на первую виртуальную машину
 <img width="926" height="196" alt="image" src="https://github.com/user-attachments/assets/727d2d03-2fb4-4fac-a269-c2ff13599f5e" />
 
+Продемонстрирован тестовый прогон, но так как я уже сделал боевой, то все тесты будут зелеными
+<img width="1279" height="297" alt="image" src="https://github.com/user-attachments/assets/9805677b-a631-4e9e-b016-64caa5c02f4a" />
+
+
 Делаем боевой прогон и проверяем
 <img width="1314" height="828" alt="image" src="https://github.com/user-attachments/assets/888cab44-e7ad-44bc-be4b-de9835d17487" />
