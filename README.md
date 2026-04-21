@@ -32,6 +32,47 @@ sudo netplan apply
 Устанавили ansible на первую виртуальную машину
 <img width="926" height="196" alt="image" src="https://github.com/user-attachments/assets/727d2d03-2fb4-4fac-a269-c2ff13599f5e" />
 
+Создаем отдельную папку. В ней мы создадим 3 файла
+<img width="332" height="42" alt="image" src="https://github.com/user-attachments/assets/2d949c52-42b1-473b-b195-3acc73982769" />
+
+inventory.ini
+```
+[webservers]
+web1 ansible_host=10.0.2.16 ansible_user=runner
+```
+index.html
+```
+<h1>Hello from Ansible</h1>
+```
+playbook.yml
+```
+---
+- name: Install nginx
+  hosts: webservers
+  become: true
+
+  tasks:
+    - name: Install nginx
+      ansible.builtin.apt:
+        name: nginx
+        update_cache: yes
+
+    - name: Copy index.html
+      ansible.builtin.copy:
+        src: ./index.html
+        dest: /var/www/html/index.html
+
+    - name: Start nginx
+      ansible.builtin.service:
+        name: nginx
+        state: started
+        enabled: true
+```
+
+Проверяем, что ansible работает
+<img width="633" height="136" alt="image" src="https://github.com/user-attachments/assets/7ea28ffc-1e2b-4b2b-bcaf-c74adcaea470" />
+
+
 Продемонстрирован тестовый прогон, но так как я уже сделал боевой, то все тесты будут зелеными
 <img width="1279" height="297" alt="image" src="https://github.com/user-attachments/assets/9805677b-a631-4e9e-b016-64caa5c02f4a" />
 
