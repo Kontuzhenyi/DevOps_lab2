@@ -28,3 +28,6 @@ sudo netplan apply
 
 На второй виртуальной машине создан пользователь без пароля для sudo. Продемонстрировано успешное подключение с первой машины
 <img width="837" height="817" alt="image" src="https://github.com/user-attachments/assets/f0f51a4e-f45d-4652-a113-c356da73740b" />
+
+Устанавили ansible на первую виртуальную машину
+<img width="926" height="196" alt="image" src="https://github.com/user-attachments/assets/727d2d03-2fb4-4fac-a269-c2ff13599f5e" />
